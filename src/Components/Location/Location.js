@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from '../../App';
 import './Location.css';
 
 const Location = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <div>
-            <div className="row container mt-5 pb-5 location-area">
+            <div className="row container mt-4 pb-5 location-area">
+                <h4 style={{marginBottom: '35px', textAlign: 'center', marginLeft: '15%', fontSize: '26px', color: '#448faf'}}>Thank You <span style={{color: '#6129ed', fontWeight: '700', fontSize: '29px'}}>{loggedInUser.displayName}!!</span> Your Order is Done.</h4>
                 <div className="col-md-7 container map">
                     <img src="https://i.ibb.co/GsZPcJT/mapImage.jpg" alt=""/>
                 </div>
@@ -28,7 +31,9 @@ const Location = () => {
                         <h6>Ahmed Hossain</h6>
                         <p>Your Rider</p>
                     </div>
-                    <button className="btn primary-button">Contact</button>
+                    <div style={{marginLeft: '23%'}}>
+                        <button className="btn primary-button">Contact</button>
+                    </div>
                 </div>
             </div>
         </div>

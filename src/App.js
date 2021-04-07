@@ -7,7 +7,6 @@ import {
   Link
 } from "react-router-dom";
 import Login from "./Components/Login/Login";
-import SignUp from "./Components/SignUp/SignUp";
 import Home from "./Components/Home/Home";
 import Header from "./Components/Header/Header";
 import Admin from "./Components/Admin/Admin";
@@ -15,6 +14,7 @@ import FoodDetails from "./Components/FoodDetails/FoodDetails";
 import DelivaryDetails from "./Components/DelivaryDetails/DelivaryDetails";
 import Location from "./Components/Location/Location";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import OrderedCartData from "./Components/OrderedCartData/OrderedCartData";
 
 export const UserContext = createContext();
 
@@ -25,7 +25,7 @@ function App() {
       <Router>
         <div>
           <Header></Header>
-          
+
           <Switch>
             <PrivateRoute path="/admin">
               <Admin />
@@ -33,8 +33,8 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/signup">
-              <SignUp />
+            <Route path="/orderedCartData">
+              <OrderedCartData />
             </Route>
             <Route path="/foodDetails/:_id">
               <FoodDetails />

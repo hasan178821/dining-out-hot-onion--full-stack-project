@@ -11,7 +11,7 @@ const Header = () => {
         <div>
             <nav className="navbar navbar-expand-md menubar">
                 <div className="container">
-                    <Link className="navbar-brand" to="/"><h2>Dining Out</h2></Link>
+                    <Link className="navbar-brand" to="/"><h2 style={{color: '#448faf', fontSize: '44px'}}>Dining Out</h2></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>
@@ -20,8 +20,8 @@ const Header = () => {
                             <Link className="nav-link active" aria-current="page" to="/"><h5>Home</h5></Link>
                             <Link className="nav-link" to="/login"><h5>Login</h5></Link>
                             <Link className="nav-link" to="/admin"><h5>Admin</h5></Link>
-                            <Link className="nav-link" to="/signup"><h5> <span style={{color: '#448faf'}}><FontAwesomeIcon icon={faShoppingCart}/></span> Cart</h5></Link>
-                            <h5 style={{color: '#448faf', marginTop: '8px', marginLeft: '15px', fontWeight: '500'}}>{loggedInUser.displayName}</h5>
+                            <Link className="nav-link" to="/orderedCartData"><h5> <span style={{color: '#448faf'}}><FontAwesomeIcon icon={faShoppingCart}/></span> Cart</h5></Link>
+                            <h5 style={{color: '#448faf', marginTop: '8px', marginLeft: '15px', fontWeight: '700'}}>{loggedInUser.displayName}</h5>
                         </div>
                     </div>
                 </div>
