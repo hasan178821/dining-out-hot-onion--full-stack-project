@@ -1,0 +1,10 @@
+.google-sign-btn {
+    display: flex;
+    justify-content: center;
+}
+.google-sign-btn span{
+    font-size: 51px;
+    margin: 0 15px;
+    color: #cb17ebce;
+    cursor: pointer;
+}

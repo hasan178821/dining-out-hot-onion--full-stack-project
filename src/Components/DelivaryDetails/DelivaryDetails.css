@@ -1,0 +1,12 @@
+.placed-info-right{
+    padding-right: 30px;
+}
+.placed-info-right img{
+    width: 80px;
+}
+.ordered-mini-card{
+    background: lightgrey;
+    padding: 10px;
+    border-radius: 8px;
+    width: 82%;
+}

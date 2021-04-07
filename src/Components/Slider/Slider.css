@@ -1,0 +1,27 @@
+.slider-area{
+    background-color: #448faf;
+}
+.slider-right img{
+    width: 450px;
+}
+.side-button{
+    background: none !important;
+}
+.slider-left{
+    padding: 25px;
+}
+.slider-left h5{
+    font-size: 51px;
+    color: #fff;
+    font-weight: 600;
+}
+.slider-left p{
+    font-size: 26px;
+    color: #fff;
+}
+.slider-right{
+    width: 450px;
+}
+.slider-item{
+    height: 90vh;
+}

@@ -1,0 +1,11 @@
+.menubar{
+    background-color: #4a47a3;
+    width: 100%;
+    z-index: 5;
+}
+.menubar h5{
+    color: whitesmoke
+}
+.menubar h2{
+    color: #fff;
+}
