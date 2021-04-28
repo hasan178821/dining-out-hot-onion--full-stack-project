@@ -6,7 +6,7 @@ const OrderedCartData = () => {
     const [ordersData, setOrdersData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/getOrderedInfo')
+        fetch('https://young-savannah-03336.herokuapp.com/getOrderedInfo')
         .then(res => res.json())
         .then(data => {
             console.log(data);

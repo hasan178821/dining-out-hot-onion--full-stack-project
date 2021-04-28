@@ -18,7 +18,7 @@ const AddFoods = () => {
         }
         // console.log(cardData)
 
-        fetch('http://localhost:5000/addFoods', {
+        fetch('https://young-savannah-03336.herokuapp.com/addFoods', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'Application/json'

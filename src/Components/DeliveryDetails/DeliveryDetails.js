@@ -10,7 +10,7 @@ const DeliveryDetails = () => {
     const [placeOrder, setPlaceOrder] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/getFoods')
+        fetch('https://young-savannah-03336.herokuapp.com/getFoods')
         .then(res => res.json())
         .then(result => {
             // console.log(result);
@@ -33,7 +33,7 @@ const DeliveryDetails = () => {
         }
         console.log(orderedData);
 
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://young-savannah-03336.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'Application/json'

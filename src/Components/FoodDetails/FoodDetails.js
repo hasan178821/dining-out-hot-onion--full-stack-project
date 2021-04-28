@@ -10,7 +10,7 @@ const FoodDetails = () => {
     const [foodDetails, setFoodDetails] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/getFoods')
+        fetch('https://young-savannah-03336.herokuapp.com/getFoods')
         .then(res => res.json())
         .then(data => {
             setFoodDetails(data);
