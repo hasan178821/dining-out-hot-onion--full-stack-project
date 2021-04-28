@@ -1,0 +1,14 @@
+.admin-tab-content{
+    width: 100%;
+}
+.admin-tab button{
+    color: goldenrod;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+.admin-tab{
+    background-color: #3380a1;
+    width: 320px;
+    height: 100vh;
+}

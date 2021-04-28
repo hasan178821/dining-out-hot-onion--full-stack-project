@@ -6,15 +6,15 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Login from "./Components/Login/Login";
-import Home from "./Components/Home/Home";
-import Header from "./Components/Header/Header";
-import Admin from "./Components/Admin/Admin";
+import Home from "./Components/HomePage/Home/Home";
 import FoodDetails from "./Components/FoodDetails/FoodDetails";
-import DelivaryDetails from "./Components/DelivaryDetails/DelivaryDetails";
+import DeliveryDetails from "./Components/DeliveryDetails/DeliveryDetails";
 import Location from "./Components/Location/Location";
-import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
-import OrderedCartData from "./Components/OrderedCartData/OrderedCartData";
+import Header from "./Components/HomePage/Header/Header";
+import Admin from "./Components/AdminPage/Admin/Admin";
+import OrderedCartData from "./Components/AdminPage/OrderedCartData/OrderedCartData";
+import Login from "./Components/Shared/Login/Login";
+import PrivateRoute from "./Components/Shared/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 
@@ -27,9 +27,9 @@ function App() {
           <Header></Header>
 
           <Switch>
-            <PrivateRoute path="/admin">
+            <Route path="/admin">
               <Admin />
-            </PrivateRoute>
+            </Route>
             <Route path="/login">
               <Login />
             </Route>
@@ -39,8 +39,8 @@ function App() {
             <Route path="/foodDetails/:_id">
               <FoodDetails />
             </Route>
-            <PrivateRoute path="/delivaryDetails/:foodName">
-              <DelivaryDetails/>
+            <PrivateRoute path="/deliveryDetails/:foodName">
+              <DeliveryDetails/>
             </PrivateRoute>
             <Route path="/location">
               <Location/>

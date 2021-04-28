@@ -10,15 +10,18 @@ const FoodDetails = () => {
     const [foodDetails, setFoodDetails] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/getBreakfastInfo')
+        fetch('http://localhost:5000/getFoods')
         .then(res => res.json())
         .then(data => {
             setFoodDetails(data);
             console.log(data);
         })
+
     }, [])
+    //
+    //
     const foodData = foodDetails.find(foodInfo => foodInfo._id === _id)
-    console.log(foodData)
+    console.log(foodData);
     return (
         <div className="container">
             {foodData && 
@@ -27,7 +30,7 @@ const FoodDetails = () => {
                         <h1>{foodData.name}</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit recusandae, rerum exercitationem autem, error facere obcaecati ea, laboriosam at earum illo aliquam voluptatum mollitia id! Quaerat dolore inventore magni voluptatibus.</p>
                         <h3>${foodData.price}</h3>
-                        <Link to={`/delivaryDetails/${foodData.name}`}>
+                        <Link to={`/deliveryDetails/${foodData.name}`}>
                             <button className="btn primary-button"> <FontAwesomeIcon icon={faShoppingCart}/> ADD TO CART</button>
                         </Link>
                     </div>

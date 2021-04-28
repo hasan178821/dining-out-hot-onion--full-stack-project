@@ -4,10 +4,14 @@ import './Location.css';
 
 const Location = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const userTokenName = sessionStorage.getItem('userToken');
     return (
         <div>
             <div className="row container mt-4 pb-5 location-area">
-                <h4 style={{marginBottom: '35px', textAlign: 'center', marginLeft: '15%', fontSize: '26px', color: '#448faf'}}>Thank You <span style={{color: '#6129ed', fontWeight: '700', fontSize: '29px'}}>{loggedInUser.displayName}!!</span> Your Order is Done.</h4>
+                <h4 style={{marginBottom: '35px', textAlign: 'center', marginLeft: '15%', fontSize: '26px', color: '#448faf'}}> Thank You <span style={{color: '#6129ed', fontWeight: '700', fontSize: '29px'}}>       {loggedInUser.displayName || userTokenName}!</span> Your Order is Done.
+                    <h6 className="pt-2">We will contact you very soon</h6>
+                </h4>
+
                 <div className="col-md-7 container map">
                     <img src="https://i.ibb.co/GsZPcJT/mapImage.jpg" alt=""/>
                 </div>

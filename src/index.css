@@ -5,9 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 h2{
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Great Vibes', cursive;
+  padding: 5px 0;
+  margin-bottom: 0;
+  color: #c51336;
 }
 
 code {

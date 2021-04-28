@@ -1,0 +1,23 @@
+.footer-main{
+    background-color: bisque;
+}
+.footer-link a{
+    color: #c51336;
+    text-decoration: none;
+}
+.footer-link a:hover{
+    text-decoration: underline;
+}
+.privacy-link a{
+    padding: 0 15px;
+}
+.social-icon h4{
+    color: #448faf;
+}
+.social-icon a{
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 27px;
+    cursor: pointer;
+
+}
