@@ -45,7 +45,7 @@ const DeliveryDetails = () => {
             console.log(result);
         })
         
-        window.location.replace('/location')
+        data.target.reset();
     }
 
     return (
