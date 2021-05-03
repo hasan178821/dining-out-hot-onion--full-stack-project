@@ -20,7 +20,7 @@ const DeliveryDetails = () => {
     const placedInfo = placeOrder.find(ordered => ordered.name === foodName);
     // console.log(placedInfo);
 
-    const onSubmit = data => {
+    const onSubmit = ( data) => {
         // console.log(data);
         const orderedData = {
             name: data.name,
@@ -45,7 +45,6 @@ const DeliveryDetails = () => {
             console.log(result);
         })
 
-        data.target.reset();
         window.location.replace('/location');
     }
 
